@@ -58,6 +58,7 @@ PRODUCT_COPY_FILES += \
 # lib
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/libaudience.so:system/lib/libaudience.so \
+    $(VENDOR_DIR)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     $(VENDOR_DIR)/lib/libhuawei-audio-ril.so:system/lib/libhuawei-audio-ril.so \
     $(VENDOR_DIR)/lib/liboeminf2.so:system/lib/liboeminf2.so \
     $(VENDOR_DIR)/lib/libril.so:system/lib/libril.so \
@@ -70,6 +71,10 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/firmware/fw_bcmdhd_apsta.bin:system/vendor/firmware/fw_bcmdhd_apsta.bin \
     $(VENDOR_DIR)/vendor/firmware/nvram.txt:system/vendor/firmware/nvram.txt
 
+# /vendor/lib/drm
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
+
 # /vendor/lib/egl
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
@@ -79,6 +84,10 @@ PRODUCT_COPY_FILES += \
 # /vendor/lib/hw
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/hw/gralloc.omap4460.so:system/vendor/lib/hw/gralloc.omap4460.so
+
+# /vendor/lib/mediadrm
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DIR)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
 # /vendor/lib
 PRODUCT_COPY_FILES += \
@@ -92,6 +101,4 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/libsrv_um_SGX540_120.so:system/vendor/lib/libsrv_um_SGX540_120.so \
     $(VENDOR_DIR)/vendor/lib/libusc_SGX540_120.so:system/vendor/lib/libusc_SGX540_120.so \
     $(VENDOR_DIR)/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-    $(VENDOR_DIR)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    $(VENDOR_DIR)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
-    $(VENDOR_DIR)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
+    $(VENDOR_DIR)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
