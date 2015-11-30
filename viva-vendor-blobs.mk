@@ -49,7 +49,7 @@ PRODUCT_COPY_FILES += \
 #/lib/hw
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/lib/hw/audio.hdmi.omap4.so:system/lib/hw/audio.hdmi.omap4.so \
-    $(VENDOR_DIR)/lib/hw/audio.primary_vendor.omap4.so:system/lib/hw/audio.primary_vendor.omap4.so \
+    $(VENDOR_DIR)/lib/hw/audio.primary.omap4.so:system/lib/hw/audio.primary.omap4.so \
     $(VENDOR_DIR)/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
     $(VENDOR_DIR)/lib/hw/libbcmfm_if.so:system/lib/hw/libbcmfm_if.so \
     $(VENDOR_DIR)/lib/hw/lights.omap4.so:system/lib/hw/lights.omap4.so \
@@ -93,7 +93,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(VENDOR_DIR)/vendor/lib/libIMGegl_SGX540_120.so:system/vendor/lib/libIMGegl_SGX540_120.so \
     $(VENDOR_DIR)/vendor/lib/libPVRScopeServices_SGX540_120.so:system/vendor/lib/libPVRScopeServices_SGX540_120.so \
-    $(VENDOR_DIR)/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     $(VENDOR_DIR)/vendor/lib/libglslcompiler_SGX540_120.so:system/vendor/lib/libglslcompiler_SGX540_120.so \
     $(VENDOR_DIR)/vendor/lib/libpvr2d_SGX540_120.so:system/vendor/lib/libpvr2d_SGX540_120.so \
     $(VENDOR_DIR)/vendor/lib/libpvrANDROID_WSEGL_SGX540_120.so:system/vendor/lib/libpvrANDROID_WSEGL_SGX540_120.so \
